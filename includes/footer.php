@@ -36,7 +36,7 @@ $langParam = isset($_GET['lang']) ? $_GET['lang'] : 'pl';
                     <a href="tel:<?php echo preg_replace('/\s+/', '', tr('company_phone')); ?>"><?php t('company_phone'); ?></a>
                 </div>
                 <div class="footer__contact-item">
-                    <span class="icon" aria-hidden="true">✉️</span>
+                    <span class="icon" aria-hidden="true"><img src="images/icons/email.png" alt="" style="width: 18px; height: 18px; filter: brightness(0) invert(1);"></span>
                     <a href="mailto:<?php t('company_email'); ?>"><?php t('company_email'); ?></a>
                 </div>
             </div>
@@ -45,11 +45,11 @@ $langParam = isset($_GET['lang']) ? $_GET['lang'] : 'pl';
             <div class="footer__col">
                 <h4><?php t('footer_hours_title'); ?></h4>
                 <div class="footer__contact-item">
-                    <span class="icon" aria-hidden="true">🕐</span>
+                    <span class="icon" aria-hidden="true"><img src="images/icons/clock.png" alt="" style="width: 18px; height: 18px; filter: brightness(0) invert(1);"></span>
                     <span><?php t('footer_hours_value'); ?></span>
                 </div>
                 <div class="footer__contact-item">
-                    <span class="icon" aria-hidden="true">🏢</span>
+                    <span class="icon" aria-hidden="true"><img src="images/icons/briefcase.png" alt="" style="width: 18px; height: 18px; filter: brightness(0) invert(1);"></span>
                     <span><?php t('nip_label'); ?>: <?php t('company_nip'); ?></span>
                 </div>
             </div>

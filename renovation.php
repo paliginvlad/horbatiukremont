@@ -16,10 +16,11 @@ require_once 'includes/header.php';
                     <img src="images/icons/phone.png" alt="" style="width: 20px; height: 20px; display: inline-block; margin-right: 6px; vertical-align: middle;"> <?php t('hero_cta'); ?>
                 </a>
                 <a href="#gallery" class="btn btn-outline">
-                    🖼 <?php t('gallery_title'); ?>
+                    <?php t('gallery_title'); ?>
                 </a>
             </div>
         </div>
+
     </div>
 </section>
 
@@ -168,6 +169,7 @@ require_once 'includes/header.php';
               </div>
         -->
 
+        <h3 class="gallery-photos-title"><?php t('gallery_photos_title'); ?></h3>
         <div class="gallery-grid" role="list" aria-label="<?php t('gallery_title'); ?>">
 
             <!-- Row 1 -->
@@ -212,6 +214,27 @@ require_once 'includes/header.php';
                 <div class="gallery-overlay"><div class="gallery-overlay-icon" aria-hidden="true">🔍</div></div>
             </div> -->
 
+        </div>
+        <h3 class="gallery-videos-title"><?php t('gallery_videos_title'); ?></h3>
+        <div class="gallery-grid" role="list" aria-label="<?php t('gallery_videos_title'); ?>">
+            <?php
+            $videoFiles = glob('videos/*.{mp4,webm,ogg,MP4,WEBM,OGG}', GLOB_BRACE);
+            if (!empty($videoFiles)):
+                foreach ($videoFiles as $index => $videoPath):
+                    $safeVideoPath = htmlspecialchars($videoPath, ENT_QUOTES, 'UTF-8');
+            ?>
+                <div class="gallery-item" role="listitem" tabindex="0" title="<?php t('gallery_videos_title'); ?> <?php echo $index + 1; ?>">
+                    <video muted playsinline preload="metadata">
+                        <source src="<?php echo $safeVideoPath; ?>">
+                    </video>
+                    <div class="gallery-overlay"><div class="gallery-overlay-icon gallery-overlay-icon--video" aria-hidden="true"><img src="images/icons/magnifying_glass.png" class="gallery-overlay-icon__img" alt=""></div></div>
+                </div>
+            <?php
+                endforeach;
+            else:
+            ?>
+                <p class="gallery-empty"><?php t('gallery_no_videos'); ?></p>
+            <?php endif; ?>
         </div>
     </div>
 </section>

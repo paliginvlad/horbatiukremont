@@ -17,8 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Build media list from gallery items
     galleryItems.forEach(function (item, index) {
-        const img = item.querySelector('img[data-src]') || item.querySelector('img');
-        const video = item.querySelector('video');
+        // Use only the card's primary media element (direct child),
+        // not overlay icons like the magnifying glass image.
+        const img = item.querySelector(':scope > img[data-src], :scope > img');
+        const video = item.querySelector(':scope > video');
         if (img) {
             mediaList.push({ type: 'image', src: img.dataset.src || img.src, alt: img.alt || '' });
         } else if (video) {

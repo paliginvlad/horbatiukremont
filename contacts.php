@@ -36,7 +36,7 @@ require_once 'includes/header.php';
                 </div>
 
                 <div class="contact-info-row">
-                    <div class="contact-info-icon" aria-hidden="true">✉️</div>
+                    <div class="contact-info-icon" aria-hidden="true"><img src="images/icons/email.png" alt="" style="width: 24px; height: 24px; filter: brightness(0) invert(1);"></div>
                     <div class="contact-info-content">
                         <strong><?php t('email_label'); ?></strong>
                         <a href="mailto:<?php t('company_email'); ?>"><?php t('company_email'); ?></a>
@@ -52,7 +52,7 @@ require_once 'includes/header.php';
                 </div>
 
                 <div class="contact-info-row">
-                    <div class="contact-info-icon" aria-hidden="true">🕐</div>
+                    <div class="contact-info-icon" aria-hidden="true"><img src="images/icons/clock.png" alt="" style="width: 24px; height: 24px; filter: brightness(0) invert(1);"></div>
                     <div class="contact-info-content">
                         <strong><?php t('hours_label'); ?></strong>
                         <span><?php t('hours_value'); ?></span>
@@ -60,7 +60,7 @@ require_once 'includes/header.php';
                 </div>
 
                 <div class="contact-info-row">
-                    <div class="contact-info-icon" aria-hidden="true">🏢</div>
+                    <div class="contact-info-icon" aria-hidden="true"><img src="images/icons/briefcase.png" alt="" style="width: 24px; height: 24px; filter: brightness(0) invert(1);"></div>
                     <div class="contact-info-content">
                         <strong><?php t('nip_label'); ?></strong>
                         <span><?php t('company_nip'); ?></span>
@@ -68,7 +68,7 @@ require_once 'includes/header.php';
                 </div>
 
                 <div class="contact-info-row">
-                    <div class="contact-info-icon" aria-hidden="true">🗺️</div>
+                    <div class="contact-info-icon" aria-hidden="true"><img src="images/icons/map.png" alt="" style="width: 24px; height: 24px; filter: brightness(0) invert(1);"></div>
                     <div class="contact-info-content">
                         <strong><?php t('area_label'); ?></strong>
                         <span><?php t('area_value'); ?></span>
@@ -135,7 +135,7 @@ require_once 'includes/header.php';
                     </div>
 
                     <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
-                        📨 <?php t('form_submit'); ?>
+                    <img src="images/icons/send_mail.png" alt="" style="width: 24px; height: 24px; filter: brightness(0) invert(1);"> <?php t('form_submit'); ?>
                     </button>
                 </form>
             </div>
@@ -158,7 +158,7 @@ require_once 'includes/header.php';
                 The map is embedded via a public iframe. No API key required for this basic embed.
             -->
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.7540239430285!2d19.00095831574248!3d50.09547877942578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716cdf0ab1e5e51%3A0x9c0c6b5c0fcd1e3!2sMorci%C5%84ska%2013%2C%2043-100%20Tychy!5e0!3m2!1spl!2spl!4v1712000000000!5m2!1spl!2spl"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.6246002522953!2d18.98092307641662!3d50.11203317152951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716b7fce8b12f79%3A0x86676a4c2b96f72d!2sMorcinka%2013%2F5%2C%2043-110%20Tychy!5e0!3m2!1sru!2spl!4v1775051782868!5m2!1sru!2spl"
                 width="100%"
                 height="480"
                 style="border:0;"

@@ -17,7 +17,7 @@ require_once 'includes/header.php';
                     <img src="images/icons/phone.png" alt="" style="width: 20px; height: 20px; display: inline-block; margin-right: 6px; vertical-align: middle;"> <?php t('hero_cta'); ?>
                 </a>
                 <a href="renovation.php?lang=<?php echo $lang; ?>" class="btn btn-outline">
-                    🖼 <?php t('hero_cta2'); ?>
+                    <?php t('hero_cta2'); ?>
                 </a>
             </div>
         </div>
@@ -73,32 +73,32 @@ require_once 'includes/header.php';
         </div>
         <div class="grid-3">
             <div class="service-card fade-in">
-                <div class="service-icon" aria-hidden="true">🏗️</div>
+            <div class="service-icon" aria-hidden="true"><img src="images/icons/facade.png" class="service-icon__img" alt=""></div>
                 <h3><?php t('service1_title'); ?></h3>
                 <p><?php t('service1_text'); ?></p>
             </div>
             <div class="service-card fade-in">
-                <div class="service-icon" aria-hidden="true">🪵</div>
+                <div class="service-icon" aria-hidden="true"><img src="images/icons/floor.png" class="service-icon__img" alt=""></div>
                 <h3><?php t('service2_title'); ?></h3>
                 <p><?php t('service2_text'); ?></p>
             </div>
             <div class="service-card fade-in">
-                <div class="service-icon" aria-hidden="true">🔲</div>
+                <div class="service-icon" aria-hidden="true"><img src="images/icons/drywall.png" class="service-icon__img" alt=""></div>
                 <h3><?php t('service3_title'); ?></h3>
                 <p><?php t('service3_text'); ?></p>
             </div>
             <div class="service-card fade-in">
-                <div class="service-icon" aria-hidden="true">🔧</div>
+                <div class="service-icon" aria-hidden="true"><img src="images/icons/plumbers_wrench.png" class="service-icon__img" alt=""></div>
                 <h3><?php t('service4_title'); ?></h3>
                 <p><?php t('service4_text'); ?></p>
             </div>
             <div class="service-card fade-in">
-                <div class="service-icon" aria-hidden="true">🎨</div>
+                <div class="service-icon" aria-hidden="true"><img src="images/icons/palette.png" class="service-icon__img" alt=""></div>
                 <h3><?php t('service5_title'); ?></h3>
                 <p><?php t('service5_text'); ?></p>
             </div>
             <div class="service-card fade-in">
-                <div class="service-icon" aria-hidden="true">⚡</div>
+                <div class="service-icon" aria-hidden="true"><img src="images/icons/lightning.png" class="service-icon__img" alt=""></div>
                 <h3><?php t('service6_title'); ?></h3>
                 <p><?php t('service6_text'); ?></p>
             </div>
@@ -116,42 +116,42 @@ require_once 'includes/header.php';
         </div>
         <div class="grid-2">
             <div class="adv-card fade-in">
-                <div class="adv-icon" aria-hidden="true">👷</div>
+                <div class="adv-icon" aria-hidden="true"><img src="images/icons/team.png" class="service-icon__img" alt="" style="filter: brightness(0) invert(1);"></div>
                 <div class="adv-content">
                     <h3><?php t('adv1_title'); ?></h3>
                     <p><?php t('adv1_text'); ?></p>
                 </div>
             </div>
             <div class="adv-card fade-in">
-                <div class="adv-icon" aria-hidden="true">✅</div>
+                <div class="adv-icon" aria-hidden="true"><img src="images/icons/check.png" class="service-icon__img" alt="" style="filter: brightness(0) invert(1);"></div>
                 <div class="adv-content">
                     <h3><?php t('adv2_title'); ?></h3>
                     <p><?php t('adv2_text'); ?></p>
                 </div>
             </div>
             <div class="adv-card fade-in">
-                <div class="adv-icon" aria-hidden="true">🕐</div>
+                <div class="adv-icon" aria-hidden="true"><img src="images/icons/clock.png" class="service-icon__img" alt="" style="width: 22px; height: 22px; filter: brightness(0) invert(1);"></div>
                 <div class="adv-content">
                     <h3><?php t('adv3_title'); ?></h3>
                     <p><?php t('adv3_text'); ?></p>
                 </div>
             </div>
             <div class="adv-card fade-in">
-                <div class="adv-icon" aria-hidden="true">⭐</div>
+                <div class="adv-icon" aria-hidden="true"><img src="images/icons/star.png" class="service-icon__img" alt="" style="filter: brightness(0) invert(1);"></div>
                 <div class="adv-content">
                     <h3><?php t('adv4_title'); ?></h3>
                     <p><?php t('adv4_text'); ?></p>
                 </div>
             </div>
             <div class="adv-card fade-in">
-                <div class="adv-icon" aria-hidden="true">💰</div>
+                <div class="adv-icon" aria-hidden="true"><img src="images/icons/bag_money.png" class="service-icon__img" alt="" style="filter: brightness(0) invert(1);"></div>
                 <div class="adv-content">
                     <h3><?php t('adv5_title'); ?></h3>
                     <p><?php t('adv5_text'); ?></p>
                 </div>
             </div>
             <div class="adv-card fade-in">
-                <div class="adv-icon" aria-hidden="true">🔑</div>
+                <div class="adv-icon" aria-hidden="true"><img src="images/icons/key.png" class="service-icon__img" alt="" style="filter: brightness(0) invert(1);"></div>
                 <div class="adv-content">
                     <h3><?php t('adv6_title'); ?></h3>
                     <p><?php t('adv6_text'); ?></p>
@@ -243,7 +243,7 @@ require_once 'includes/header.php';
         <h2><?php echo $lang === 'uk' ? 'Готові розпочати ремонт?' : 'Gotowi zacząć remont?'; ?></h2>
         <p><?php echo $lang === 'uk' ? 'Зателефонуйте нам або залиште заявку — безкоштовна консультація вже сьогодні.' : 'Zadzwoń do nas lub zostaw zapytanie — bezpłatna konsultacja już dziś.'; ?></p>
         <a href="contacts.php?lang=<?php echo $lang; ?>" class="btn btn-accent">
-            <?php t('hero_cta'); ?>
+            <img src="images/icons/phone.png" alt="" style="width: 20px; height: 20px; display: inline-block; margin-right: 6px; vertical-align: middle;"> <?php t('hero_cta'); ?>
         </a>
     </div>
 </section>

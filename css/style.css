@@ -479,6 +479,13 @@ p:last-child { margin-bottom: 0; }
     font-size: 1.6rem;
 }
 
+.service-icon__img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    object-fit: contain;
+}
+
 .service-card h3 {
     font-size: 1.125rem;
     margin-bottom: 10px;
@@ -711,6 +718,15 @@ p:last-child { margin-bottom: 0; }
 /* ============================================================
    GALLERY
 ============================================================ */
+.gallery-photos-title {
+    margin-bottom: 18px;
+}
+
+.gallery-videos-title {
+    margin-top: 40px;
+    margin-bottom: 18px;
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -784,9 +800,20 @@ p:last-child { margin-bottom: 0; }
     border-radius: 0;
 }
 
+.gallery-overlay-icon--video {
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
 .gallery-item:hover .gallery-overlay-icon {
     opacity: 1;
     transform: scale(1);
+}
+
+.gallery-empty {
+    grid-column: 1 / -1;
+    margin: 0;
+    color: var(--text-light);
 }
 
 /* Placeholder for gallery items without real photos */

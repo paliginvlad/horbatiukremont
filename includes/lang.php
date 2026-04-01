@@ -104,6 +104,9 @@ $translations = [
 
         'gallery_title' => 'Nasze realizacje',
         'gallery_subtitle' => 'Wybrane projekty remontów mieszkań wykonanych przez nasz zespół.',
+        'gallery_photos_title' => 'Zdjęcia',
+        'gallery_videos_title' => 'Wideo',
+        'gallery_no_videos' => 'Wkrótce dodamy materiały wideo.',
         'gallery_photo_alt' => 'Zdjęcie realizacji',
 
         'lightbox_close' => 'Zamknij',
@@ -252,6 +255,9 @@ $translations = [
 
         'gallery_title' => 'Наші роботи',
         'gallery_subtitle' => 'Вибрані проєкти ремонту квартир, виконані нашою командою.',
+        'gallery_photos_title' => 'Фото',
+        'gallery_videos_title' => 'Відео',
+        'gallery_no_videos' => 'Незабаром додамо відеоматеріали.',
         'gallery_photo_alt' => 'Фото виконаної роботи',
 
         'lightbox_close' => 'Закрити',

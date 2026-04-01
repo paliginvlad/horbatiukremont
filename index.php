@@ -10,14 +10,13 @@ require_once 'includes/header.php';
     <div class="container">
         <div class="hero__content">
           
-            <h1 id="hero-heading"><?php t('hero_title'); ?></h1>
+            <h1 id="hero-heading">
+                <?php echo $lang === 'uk' ? 'Якісний ремонт квартир та будинків у Польщі' : 'Jakosciowe remonty mieszkan i domow w Polsce'; ?>
+            </h1>
             <p><?php t('hero_subtitle'); ?></p>
             <div class="hero__btns">
                 <a href="contacts.php?lang=<?php echo $lang; ?>" class="btn btn-accent">
                     <img src="images/icons/phone.png" alt="" style="width: 20px; height: 20px; display: inline-block; margin-right: 6px; vertical-align: middle;"> <?php t('hero_cta'); ?>
-                </a>
-                <a href="renovation.php?lang=<?php echo $lang; ?>" class="btn btn-outline">
-                    <?php t('hero_cta2'); ?>
                 </a>
             </div>
         </div>

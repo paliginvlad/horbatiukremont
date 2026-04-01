@@ -328,23 +328,43 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* Mobile menu button */
-.header__burger {
+.header__menu-toggle {
     display: none;
-    flex-direction: column;
-    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
-    padding: 6px;
+    padding: 0;
     background: none;
     border: none;
+    border-radius: 6px;
 }
 
-.header__burger span {
+.header__menu-toggle:hover {
+    background: var(--gray-bg);
+}
+
+.menu-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.menu-icon--close {
+    display: none;
+}
+
+.header__menu-toggle.is-open .menu-icon--open {
+    display: none;
+}
+
+.header__menu-toggle.is-open .menu-icon--close {
     display: block;
-    width: 24px;
-    height: 2px;
-    background: var(--dark);
-    border-radius: 2px;
-    transition: transform var(--transition), opacity var(--transition);
+}
+
+.mobile-menu {
+    display: none;
 }
 
 /* ============================================================
@@ -1230,20 +1250,45 @@ p:last-child { margin-bottom: 0; }
     .section { padding: 56px 0; }
 
     .header__nav { display: none; }
-    .header__burger { display: flex; }
-    .header__nav.open {
-        display: flex;
-        flex-direction: column;
+    .header__menu-toggle { display: inline-flex; }
+    .lang-switcher--desktop { display: none; }
+    .header__actions {
+        margin-left: auto;
+        justify-content: flex-end;
+        width: 48px;
+    }
+
+    .mobile-menu.open {
+        display: block;
         position: fixed;
         top: var(--header-h);
         left: 0;
         right: 0;
         background: var(--white);
-        padding: 16px;
+        padding: 16px 20px 20px;
         border-bottom: 1px solid var(--border);
-        gap: 4px;
         box-shadow: var(--shadow-lg);
-        z-index: 999;
+        z-index: 1001;
+    }
+
+    .mobile-menu__lang {
+        width: fit-content;
+        margin-bottom: 14px;
+    }
+
+    .mobile-menu__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .mobile-menu__nav .nav-link {
+        padding: 10px 12px;
+    }
+
+    .menu-icon--close {
+        width: 18px;
+        height: 18px;
     }
 
     .grid-2, .grid-3, .grid-4 {

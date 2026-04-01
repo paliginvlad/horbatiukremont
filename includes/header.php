@@ -54,7 +54,7 @@ $urlUk = '?' . http_build_query(array_merge($_GET, ['lang' => 'uk']));
             <!-- Actions -->
             <div class="header__actions">
                 <!-- Language switcher -->
-                <div class="lang-switcher" role="group" aria-label="<?php t('choose_lang'); ?>">
+                <div class="lang-switcher lang-switcher--desktop" role="group" aria-label="<?php t('choose_lang'); ?>">
                     <a href="<?php echo $urlPl; ?>"
                        class="lang-btn<?php echo $lang === 'pl' ? ' active' : ''; ?>"
                        aria-label="Polski" hreflang="pl">PL</a>
@@ -63,13 +63,28 @@ $urlUk = '?' . http_build_query(array_merge($_GET, ['lang' => 'uk']));
                        aria-label="Українська" hreflang="uk">UA</a>
                 </div>
 
-                <!-- Mobile burger -->
-                <button class="header__burger" aria-label="Toggle menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <!-- Mobile menu button -->
+                <button class="header__menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <img class="menu-icon menu-icon--open" src="images/icons/menu.png" alt="" aria-hidden="true">
+                    <img class="menu-icon menu-icon--close" src="images/icons/black_cross.png" alt="" aria-hidden="true">
                 </button>
             </div>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu" hidden>
+            <div class="mobile-menu__lang lang-switcher" role="group" aria-label="<?php t('choose_lang'); ?>">
+                <a href="<?php echo $urlPl; ?>"
+                   class="lang-btn<?php echo $lang === 'pl' ? ' active' : ''; ?>"
+                   aria-label="Polski" hreflang="pl">PL</a>
+                <a href="<?php echo $urlUk; ?>"
+                   class="lang-btn<?php echo $lang === 'uk' ? ' active' : ''; ?>"
+                   aria-label="Українська" hreflang="uk">UA</a>
+            </div>
+            <nav class="mobile-menu__nav" role="navigation" aria-label="Mobile navigation">
+                <?php echo navLink('index.php', 'nav_home', $currentPage); ?>
+                <?php echo navLink('renovation.php', 'nav_renovation', $currentPage); ?>
+                <?php echo navLink('contacts.php', 'nav_contacts', $currentPage); ?>
+            </nav>
         </div>
     </div>
 </header>

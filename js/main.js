@@ -19,23 +19,45 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // --------------------------------------------------------
-    // 2. Mobile burger menu
+    // 2. Mobile menu
     // --------------------------------------------------------
-    const burger = document.querySelector('.header__burger');
-    const nav = document.querySelector('.header__nav');
-    if (burger && nav) {
-        burger.addEventListener('click', function () {
-            const isOpen = nav.classList.toggle('open');
-            burger.setAttribute('aria-expanded', isOpen);
+    const menuToggle = document.querySelector('.header__menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    if (menuToggle && mobileMenu) {
+        const closeMobileMenu = function () {
+            mobileMenu.classList.remove('open');
+            mobileMenu.hidden = true;
+            menuToggle.classList.remove('is-open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        };
+
+        menuToggle.addEventListener('click', function () {
+            const isOpen = !mobileMenu.classList.contains('open');
+            mobileMenu.classList.toggle('open', isOpen);
+            mobileMenu.hidden = !isOpen;
+            menuToggle.classList.toggle('is-open', isOpen);
+            menuToggle.setAttribute('aria-expanded', String(isOpen));
             document.body.style.overflow = isOpen ? 'hidden' : '';
         });
 
-        // Close nav when a link is clicked
-        nav.querySelectorAll('.nav-link').forEach(function (link) {
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('.nav-link').forEach(function (link) {
             link.addEventListener('click', function () {
-                nav.classList.remove('open');
-                document.body.style.overflow = '';
+                closeMobileMenu();
             });
+        });
+
+        window.addEventListener('resize', function () {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeMobileMenu();
+            }
         });
     }
 

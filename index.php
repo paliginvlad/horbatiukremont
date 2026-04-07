@@ -41,7 +41,7 @@ require_once 'includes/header.php';
             </div>
             <div class="about-stats fade-in">
                 <div class="stat-card">
-                    <div class="number">10+</div>
+                    <div class="number">25+</div>
                     <div class="desc"><?php echo $lang === 'uk' ? 'Років досвіду' : 'Lat doświadczenia'; ?></div>
                 </div>
                 <div class="stat-card">

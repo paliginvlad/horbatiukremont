@@ -6,7 +6,7 @@ require_once 'includes/header.php';
 <!-- ============================================================
      HERO
 ============================================================ -->
-<section class="hero" aria-labelledby="renov-hero-heading">
+<section class="hero hero--renovation" aria-labelledby="renov-hero-heading">
     <div class="container">
         <div class="hero__content">
             <h1 id="renov-hero-heading"><?php t('renov_hero_title'); ?></h1>

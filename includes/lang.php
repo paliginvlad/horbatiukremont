@@ -150,7 +150,7 @@ $translations = [
         'footer_rights' => 'Wszelkie prawa zastrzeżone.',
 
         // Company data
-        'company_phone' => '+48 577 917 817',
+        'company_phone' => '+48 575 503 899',
         'company_email' => 'horbatiukrenovation@gmail.com',
         'company_address' => 'ul. Morcinska 13/5, 43-100, Tychy',
         'company_nip' => '6463013249',
@@ -301,7 +301,7 @@ $translations = [
         'footer_rights' => 'Всі права захищені.',
 
         // Company data
-        'company_phone' => '+48 577 917 817',
+        'company_phone' => '+48 575 503 899',
         'company_email' => 'horbatiukrenovation@gmail.com',
         'company_address' => 'ul. Morcinska 13/5, 43-100, Tychy',
         'company_nip' => '6463013249',

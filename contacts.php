@@ -6,7 +6,7 @@ require_once 'includes/header.php';
 <!-- ============================================================
      PAGE HERO
 ============================================================ -->
-<section class="hero" style="padding-bottom: 64px;" aria-labelledby="contacts-heading">
+<section class="hero hero--contacts" style="padding-bottom: 64px;" aria-labelledby="contacts-heading">
     <div class="container">
         <div class="hero__content">
             <div class="hero__badge" aria-hidden="true"><img src="images/icons/location.png" alt="" style="width: 24px; height: 24px; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2743%) hue-rotate(14deg) brightness(104%) contrast(104%);"> Tychy, <?php t('area_value'); ?></div>
@@ -105,10 +105,11 @@ require_once 'includes/header.php';
                     </div>
 
                     <div class="form-group">
-                        <label for="phone"><?php t('form_phone'); ?></label>
+                        <label for="phone"><?php t('form_phone'); ?> *</label>
                         <input type="tel"
                                id="phone"
                                name="phone"
+                               required
                                autocomplete="tel"
                                placeholder="+48 000 000 000">
                         <span class="field-error" role="alert"></span>

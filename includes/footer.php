@@ -52,6 +52,10 @@ $langParam = isset($_GET['lang']) ? $_GET['lang'] : 'pl';
                     <span class="icon" aria-hidden="true"><img src="images/icons/briefcase.png" alt="" style="width: 18px; height: 18px; filter: brightness(0) invert(1);"></span>
                     <span><?php t('nip_label'); ?>: <?php t('company_nip'); ?></span>
                 </div>
+                <div class="footer__contact-item">
+                    <span class="icon" aria-hidden="true"><img src="images/icons/map.png" alt="" style="width: 18px; height: 18px; filter: brightness(0) invert(1);"></span>
+                    <span><?php t('area_label'); ?>: <?php t('area_value'); ?></span>
+                </div>
             </div>
         </div>
 
